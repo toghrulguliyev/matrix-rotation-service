@@ -30,13 +30,13 @@ A Spring Boot microservice that rotates the layers of a 2D matrix by a given num
 
 ## Overview
 
-This service exposes a single REST endpoint that accepts a 2D matrix and a rotation count as JSON, rotates the matrix layers by the specified number, and returns the rotated matrix.
+This service exposes a single REST endpoint that accepts a 2D matrix and a rotation count as JSON, rotates the matrix layers by the specified number counter clockwise, and returns the rotated matrix.
 
 The rotation algorithm works layer by layer (outermost first), using GCD-based cycle rotation for optimal performance even on large matrices.
 
 ## Features
 
-* Rotate any M×N matrix by an arbitrary number of rotations
+* Rotate any M×N matrix counter clockwise by an arbitrary number of rotations
 * Handles empty or null matrices gracefully
 * Validates negative rotation counts and returns descriptive errors
 * Comprehensive unit tests using JUnit 5
