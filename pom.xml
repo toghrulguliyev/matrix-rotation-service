@@ -64,6 +64,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.example.matrix.rotation.service.Application</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
